@@ -4,32 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/temp_startbg"
     android:gravity="center"
-    android:padding="12dp"
     android:orientation="vertical"
+    android:padding="12dp"
     tools:context=".StartActivity">
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:src="@drawable/toir_logo"/>
+        android:layout_height="200dp"
+        android:src="@drawable/toir_logo_tb" />
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Log In"
         android:id="@+id/login"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:textColor="@color/colorPrimary"
-        android:background="@drawable/button_background"/>
+        android:background="#70673A"
+        android:text="Log In"
+        android:textColor="@android:color/background_light" />
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Register"
         android:id="@+id/register"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:textColor="@color/colorPrimary"
-        android:background="@drawable/button_background"/>
+        android:background="#58533A"
+        android:text="Register"
+        android:textColor="@android:color/background_light" />
 
 </LinearLayout>
