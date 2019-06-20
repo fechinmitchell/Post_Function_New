@@ -98,11 +98,11 @@ public class RegisterActivity extends AppCompatActivity {
                             reference = FirebaseDatabase.getInstance().getReference().child("Users").child(userid);
 
                             HashMap<String, Object> hashMap = new HashMap<>();
-                            hashMap.put("ID", userid);
-                            hashMap.put("Username", username.toLowerCase());
+                            hashMap.put("id", userid);
+                            hashMap.put("username", username.toLowerCase());
                             hashMap.put("fullname", fullname);
                             hashMap.put("bio", "");
-                            hashMap.put("imgaeurl", "https://firebasestorage.googleapis.com/v0/b/toirv3-478fc.appspot.com/o/imageholder.png?alt=media&token=f4c253c9-dc38-440f-9d5f-49bcd8a228a3");
+                            hashMap.put("imageurl", "https://firebasestorage.googleapis.com/v0/b/toirv3-478fc.appspot.com/o/imageholder.png?alt=media&token=f4c253c9-dc38-440f-9d5f-49bcd8a228a3");
 
                             reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
